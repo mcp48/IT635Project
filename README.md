@@ -1,2 +1,3 @@
 # IT635Project
 IT 635 Project
+This project will list various flight arrival and departure times; both the scheduled times and the arrival times.  If the flight is delayed, a brief reason for the delay will also be listed.  The flights in the tables will be selected randomly from daily flight schedules found on airline websites.  The same flights will be tracked for a period of roughly one month.  This will determine how often they are late, if at all.  If a flight is consistently late, operations personnel would have to decide if it is worth keeping the flight on the schedule if it is constantly arriving late to the destination.
