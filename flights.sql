@@ -1,32 +1,32 @@
 CREATE DATABASE flights;
 USE flights;
 CREATE TABLE routes (
-  flight_number VARCHAR 6,
-  origin VARCHAR 255,
-  destination VARCHAR 255,
+  flight_number VARCHAR(6),
+  origin VARCHAR(255),
+  destination VARCHAR(255),
   PRIMARY KEY (flight_number)
   );
   
 CREATE TABLE airports (
-  airport_code VARCHAR 3,
-  airport_name VARCHAR 255,
+  airport_code VARCHAR(3),
+  airport_name VARCHAR(255),
   PRIMARY KEY (airport_code)
   );
 
 CREATE TABLE schedules (
-  flight_number VARCHAR 6,
+  flight_number VARCHAR(6),
   date DATE,
-  depart_scheduled VARCHAR 10,
-  depart_actual VARCHAR 10,
-  arrival_scheduled VARCHAR 10,
-  arrival_actual VARCHAR 10,
+  depart_scheduled VARCHAR(10),
+  depart_actual VARCHAR(10),
+  arrival_scheduled VARCHAR(10),
+  arrival_actual VARCHAR(10),
   PRIMARY KEY (flight_number, date)
   );
   
 CREATE TABLE delays (
-  flight_number VARCHAR 6,
+  flight_number VARCHAR(6),
   date DATE,
-  delay_reason VARCHAR 255,
+  delay_reason VARCHAR(255),
   PRIMARY KEY (flight_number, date)
   );
   
